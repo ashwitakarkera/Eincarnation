@@ -72,7 +72,7 @@ export default function CoreTeam() {
             // RENDER FEATURE BLOCK AT THE END (Heading at bottom)
             return (
               <div key={index} className="pt-20">
-                <div className="w-full aspect-[21/9] bg-[#E9E7D9] rounded-[2.5rem] mb-10 shadow-sm" />
+                <div className="w-full aspect-[21/9] g-[#F4F3EF] rounded-[2.5rem] mb-10 shadow-sm" />
                 <div className="max-w-5xl">
                   <h2 className="text-[52px] font-black text-[#1e1494] mb-4">
                     {item.title}
