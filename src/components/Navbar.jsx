@@ -12,7 +12,7 @@ export default function Navbar() {
         <a href="#" className="hover:opacity-80 border-b-2 border-white pb-1">About Us</a>
         <a href="#" className="hover:opacity-80">Services</a>
         <a href="#" className="hover:opacity-80">Events</a>
-        <a href="#" className="hover:opacity-80">Contact Us</a>
+        <a href="/contact" className="hover:opacity-80">Contact Us</a>
       </nav>
     </div>
   );
