@@ -4,7 +4,7 @@ import historyOverlay from "../assets/images/history-overlay.png";
 
 export default function HistorySection() {
   return (
-    <section className="bg-[#f5f4ed] py-24 overflow-hidden font-sans">
+    <section className="bg-[#F4F3EF] py-24 overflow-hidden font-sans">
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 lg:gap-0">
           
@@ -14,11 +14,11 @@ export default function HistorySection() {
               ABOUT
             </p>
 
-            <h2 className=" md:text-[60px] font-semibold text-[#1e1494] ">
+            <h1 className="font-bold leading-tight text-[#1A0185] text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
               Our History
-            </h2>
+            </h1>
 
-            <p className="text-[16px] leading-[1.8] text-gray-700 mb-10 max-w-[460px] text-justify md:text-left">
+            <p className="text-[16px] leading-[1.8] text-[#000000] mb-10 mt-5  max-w-[460px] text-justify md:text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

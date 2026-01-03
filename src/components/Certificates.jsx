@@ -30,61 +30,64 @@ export default function Certificates() {
   ];
 
   return (
-    // Main Background updated to #F4F3EF
-    <section className="bg-[#F4F3EF] py-24 relative overflow-hidden font-sans">
-      {/* Decorative image in top right */}
-      <img 
-        src={decor} 
-        alt="" 
-        className="absolute -right-6 -top-6 w-80 pointer-events-none opacity-90 z-0" 
+    <section className="bg-[#EBE8D7] py-28 relative overflow-hidden font-sans">
+      
+      {/* Decorative Image */}
+      <img
+        src={decor}
+        alt=""
+        className="absolute top-0 right-0 w-[260px] pointer-events-none select-none"
       />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        <div className="mb-14">
-          <p className="text-[20px] font-semibold text-black mb-1 uppercase">OUR</p>
-          <h2 className="text-[52px] font-semibold text-[#1e1494] leading-tight">
+
+        {/* HEADER */}
+        <div className="mb-20">
+          <p className="text-sm font-semibold uppercase tracking-widest text-black mb-2">
+            OUR
+          </p>
+          <h1 className="text-[52px] font-bold text-[#1e1494] leading-tight">
             Certificates
-          </h2>
+          </h1>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
+        {/* CARDS GRID */}
+        <div className="grid md:grid-cols-2 gap-10">
           {certs.map((c) => (
-            <div 
-              key={c.id} 
-              // Card Background updated to #EBE8D7
-              className="bg-[#EBE8D7] p-10 rounded-[40px] shadow-sm flex flex-col justify-between border border-white/20"
+            <div
+              key={c.id}
+              className="bg-[#F4F3EF] rounded-[32px] p-10 flex flex-col justify-between shadow-sm border border-white/30"
             >
+              
+              {/* CARD HEADER */}
               <div>
-                {/* Header: Logo and ID on same line */}
-                {/* Header: Logo and ID on same line */}
-<div className="flex justify-between items-center mb-10">
-  {/* Removed p-3 and added overflow-hidden to ensure the image clips to the circle */}
-  <div className="w-20 h-20 flex items-center justify-center bg-white rounded-full overflow-hidden shadow-sm">
-    <img 
-      src={c.logo} 
-      alt={c.id} 
-      className="w-full h-full object-cover" // Changed to w-full and h-full with object-cover
-    />
-  </div>
-  <h3 className="text-[28px] font-bold text-[#2d3e50] tracking-tight">
-    {c.id}
-  </h3>
-</div>
+                <div className="flex items-center justify-between mb-10">
+                  <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm overflow-hidden">
+                    <img
+                      src={c.logo}
+                      alt={c.id}
+                      className="w-full h-full object-contain p-3"
+                    />
+                  </div>
+                  <h3 className="text-[26px] font-bold text-[#2d3e50]">
+                    {c.id}
+                  </h3>
+                </div>
 
-                {/* Description */}
-                <p className="text-[15px] leading-relaxed text-gray-700 mb-10 text-justify">
+                {/* DESCRIPTION */}
+                <p className="text-[15px] leading-relaxed text-gray-700 text-justify mb-10">
                   {c.text}
                 </p>
               </div>
 
-              {/* Button */}
-              <button className="flex items-center gap-2 w-fit rounded-full bg-[#9bc9df] px-8 py-2.5 text-[14px] font-bold text-gray-900 transition-all hover:brightness-95 active:scale-95">
-                Download now 
-                <span className="text-lg">→</span>
+              {/* BUTTON */}
+              <button className="flex items-center gap-2 w-fit rounded-full bg-[#9BC9DF] px-8 py-2.5 text-[14px] font-bold text-gray-900 hover:brightness-95 transition">
+                Download now →
               </button>
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
